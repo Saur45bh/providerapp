@@ -75,7 +75,7 @@ class HomeViewModel extends ChangeNotifier {
   }
 
   void setSurgeMultiplier(double value) {
-    _surgeMultiplier = value.clamp(1.0, 2.0);
+    _surgeMultiplier = value.clamp(1.0, 2.0).toDouble();
     notifyListeners();
   }
 

@@ -19,7 +19,7 @@ class LogoHeader extends StatelessWidget {
               ),
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF009EFD).withValues(alpha: 0.5),
+                  color: const Color(0xFF009EFD).withOpacity(0.5),
                   blurRadius: 14,
                   spreadRadius: 2,
                 ),
