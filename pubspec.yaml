@@ -1,0 +1,16 @@
+name: captain_provider_app
+description: Provider-side ride hailing app with MVVM architecture.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+
+flutter:
+  uses-material-design: true
