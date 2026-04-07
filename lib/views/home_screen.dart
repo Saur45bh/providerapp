@@ -1,10 +1,6 @@
 import 'package:captain_provider_app/core/constants/app_strings.dart';
 import 'package:captain_provider_app/viewmodels/home_view_model.dart';
-import 'package:captain_provider_app/views/widgets/active_ride_card.dart';
-import 'package:captain_provider_app/views/widgets/earnings_card.dart';
-import 'package:captain_provider_app/views/widgets/logo_header.dart';
-import 'package:captain_provider_app/views/widgets/ride_request_card.dart';
-import 'package:captain_provider_app/views/widgets/stat_tile.dart';
+import 'package:captain_provider_app/views/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
