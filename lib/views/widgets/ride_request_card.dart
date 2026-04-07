@@ -44,16 +44,20 @@ class RideRequestCard extends StatelessWidget {
             const SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                Text(
-                  'Fare: ₹${request.fare.toStringAsFixed(0)}',
-                  style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                Expanded(
+                  child: Text(
+                    'Fare: ₹${request.fare.toStringAsFixed(0)}',
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
-                Row(
+                Wrap(
+                  spacing: 8,
                   children: [
                     OutlinedButton(
                       onPressed: onDecline,
@@ -62,7 +66,6 @@ class RideRequestCard extends StatelessWidget {
                       ),
                       child: const Text('Decline'),
                     ),
-                    const SizedBox(width: 8),
                     FilledButton(
                       onPressed: onAccept,
                       style: FilledButton.styleFrom(
